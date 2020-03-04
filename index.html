@@ -9,7 +9,11 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-159165224-1');
+  gtag('config', 'UA-159165224-1' , { 'anonymize_ip': true } //, 
+ // { 'user_id': 'USER_ID'} 
+      );
+
+	//  gtag('set', {'user_id': 'USER_ID'}); // Set the user ID using signed-in user_id.
 </script>
 
 		
